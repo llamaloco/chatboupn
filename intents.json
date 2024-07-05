@@ -1,0 +1,207 @@
+{
+    "intents": [
+        {
+            "tag": "Saludo",
+            "patterns": ["Hola","Hola chatbot", "que tal amigo","mucho gusto", "Hola causa"],
+            "responses": ["Hola!, Soy alesia Como puedo asistirte hoy?", "Hola,en qué puedo ayudarte?", "Hola!, Que necesitas?","buenas noches , en que puedo servirle?","Hola mano"]
+        },
+        {
+            "tag": "Saludo_matutino",
+            "patterns": ["Buenos días", "Buen día", "Hola, buenos días"],
+            "responses": [ "Buenos dias, en que puedo ayudarlo?","Buenos dias, espero este teniendo una gran mñana"]
+        },
+        {
+            "tag": "Saludo_nocturno",
+            "patterns": ["Buenas noches", "Hola, buenas noches"],
+            "responses": [ "Buenos noches, espero que estes pasando una tranquila noche","Buenos noches, en que puedo ayudarte?"]
+        },
+        {
+            "tag": "PREGUNTA",
+            "patterns": ["Puedo preguntarte algo?", "una consulta"],
+            "responses": ["Claro", "Claro pregunta lo que quieras", "Porsupuesto que deseas saber.", "Comentame tu duda.","Tratare de aclarar tu duda"]
+        },
+        {
+            "tag": "DESPEDIDA",
+            "patterns": ["adios", "Hasta luego", "nos vemos", "Cuidate"],
+            "responses": ["nos vemos", "hasta pronto","Cuidate mucho","adios, espero tu pronta recuperacion"]
+        },
+        {
+            "tag": "AGRADECIMIENTO",
+            "patterns": ["Gracias", "Muchas gracias", "Te agradezco"],
+            "responses": ["De nada, hay algo mas en lo que pueda ayudarte?", "Para servirte, ¿necesitas algo más?", "Con gusto, ¿hay algo más que necesites?"]
+        },
+        {
+            "tag": "ESTADO",
+            "patterns": ["como te encuentras hoy?", "estas bien", "como va tu dia?", "como andas?"],
+            "responses": ["Tratando de echarle ganas dia a dia", "chambeando duro","Me encuentro bien , gracias"]
+        },
+        {
+            "tag": "informacion_doctores",
+            "patterns": ["dame informacion de los doctores", "quiero saber sobre los doctores"],
+            "responses": ["¿De quién quieres saber?"]
+        },
+        {
+            "tag": "doctor_alejandro",
+            "patterns": ["del doctor alejandro", "doctor alejandro", "sobre el doctor alejandro"],
+            "responses": ["El doctor alejandro es medico especializado en pediatria."]
+        },
+        {
+            "tag": "doctor_mendoza",
+            "patterns": ["del doctor mendoza", "doctor mendoza", "sobre el doctor mendoza"],
+            "responses": ["El doctor mendoza es cirujano graduado de la san marcos."]
+        },
+        {
+            "tag": "SINTOMAS",
+            "patterns": ["siento malestar", "no me siento muy bien", "me encuentro mal"],
+            "responses": ["Lo siento por escuchar eso. ¿Has tomado algún medicamento?", "Entiendo, ¿has visto a un médico?", "¿Has tenido otros síntomas?"]
+        },
+        {
+            "tag": "RESPUESTA NEGATIVA",
+            "patterns": ["todavia no", "aun no", "no",""],
+            "responses": ["Te recomiendo que vayas a uno lo antes posible", "Puedo responder cualquier duda que tengas pero mi primera recomendacion siempre sera que asistas primero a un medico capacitado"],
+            "context_set": ["SINTOMAS"]
+        },
+        {
+            "tag": "CONSEJOS_DE_SALUD",
+            "patterns": ["¿Cómo puedo mantenerme saludable?", "Consejos de salud", "Mantener buena salud" , "dame otro consejo" , "dame un consejo para la salud"  , "como puedo mantener una buena salud?"],
+            "responses": ["Es importante comer bien, hacer ejercicio regularmente y dormir lo suficiente.", "Manten una dieta balanceada, haz ejercicio y bebe mucha agua.", "Evita el estres, come frutas y verduras, y haz ejercicio."]
+        },
+        {
+             "tag": "Precios",
+             "patterns": ["cuánto cuesta", "precio de", "dame el precio de","como estan los precios de los medicamentos?", "cuanto estan los medicamentos?"],
+             "responses": ["Claro, ¿de qué medicamento necesitas saber el precio?", "¿Cuál es el medicamento del que deseas conocer el precio?","digame el medicamento del que desea conocer"]
+        },
+        {
+             "tag": "paracetamol",
+             "patterns": ["el paracetamol", "quiero saber sobre el paracetamosl","del paracetamol","dime el precio del paracetamol" ,"hablame del paracetamol"],
+             "responses": ["El precio del paracetamol puede variar desde 10 soles el blizter generico hasta 2 soles una pastilla de marca, te recomendaría consultar en la farmacia más cercana."]
+        },
+        {
+            "tag": "ibuprofeno",
+            "patterns": ["el ibuprofeno", "quiero saber sobre el ibuprofeno", "del ibuprofeno", "dime el precio del ibuprofeno"],
+            "responses": ["El precio del ibuprofeno varía dependiendo de la presentación y la marca. Puedes encontrarlo desde 8 soles por un blister genérico hasta 3 soles por pastilla de marca en algunas farmacias."]
+        },
+        {
+            "tag": "omeprazol",
+            "patterns": ["el omeprazol", "quiero saber sobre el omeprazol", "del omeprazol", "dime el precio del omeprazol"],
+            "responses": ["El omeprazol tiene un precio que oscila entre 15 y 20 soles por un blister genérico y hasta 5 soles por pastilla de marca en farmacias reconocidas."]
+        },
+        {
+            "tag": "amoxicilina",
+            "patterns": ["la amoxicilina", "quiero saber sobre la amoxicilina", "de la amoxicilina", "dime el precio de la amoxicilina"],
+            "responses": ["El precio de la amoxicilina puede variar desde 12 soles por un blister genérico hasta 3 soles por pastilla de marca en farmacias habituales."]
+        },
+        {
+            "tag": "loratadina",
+            "patterns": ["la loratadina", "quiero saber sobre la loratadina", "de la loratadina", "dime el precio de la loratadina"],
+            "responses": ["La loratadina se encuentra generalmente entre los 10 y 15 soles por un blister genérico y hasta 3 soles por pastilla de marca en farmacias locales."]
+        },
+         {
+      "tag": "paracetamol",
+      "patterns": ["Para qué sirve el paracetamol?", "Explícame sobre el paracetamol", "Beneficios del paracetamol","hablame mas del paracetamol"],
+      "responses": ["El paracetamol se utiliza comúnmente para reducir la fiebre y aliviar el dolor leve a moderado, como dolores de cabeza o dolores musculares."],
+      "context_set": ["paracetamol"]
+         },
+    {
+      "tag": "ibuprofeno",
+      "patterns": ["¿Qué hace el ibuprofeno?", "Función del ibuprofeno", "Ventajas del ibuprofeno"],
+      "responses": ["El ibuprofeno es un antiinflamatorio no esteroideo (AINE) que se utiliza para aliviar el dolor, reducir la inflamación y bajar la fiebre."]
+    },
+    {
+      "tag": "omeprazol",
+      "patterns": ["¿Cuál es el uso del omeprazol?", "Para qué sirve el omeprazol", "Ventajas del omeprazol"],
+      "responses": ["El omeprazol es un inhibidor de la bomba de protones que reduce la cantidad de ácido producido en el estómago. Se utiliza para tratar úlceras, reflujo ácido y enfermedades relacionadas con el exceso de ácido estomacal."]
+    },
+    {
+      "tag": "amoxicilina",
+      "patterns": ["¿Qué tratamiento hace la amoxicilina?", "Explicación sobre la amoxicilina", "Ventajas de la amoxicilina"],
+      "responses": ["La amoxicilina es un antibiótico que se usa para tratar una variedad de infecciones bacterianas, como infecciones respiratorias, del oído, del tracto urinario y de la piel."]
+    },
+    {
+      "tag": "loratadina",
+      "patterns": ["¿Cuál es la función de la loratadina?", "Para qué se usa la loratadina", "Beneficios de la loratadina"],
+      "responses": ["La loratadina es un antihistamínico que se utiliza para aliviar los síntomas de las alergias, como la picazón en los ojos, estornudos y secreción nasal."]
+    },
+    {
+      "tag": "consult_doctor",
+      "patterns": ["¿Debería consultar a un médico?", "¿Es importante ver a un médico antes de tomar medicamentos?"],
+      "responses": ["Sí, siempre es crucial consultar a un médico antes de comenzar cualquier tratamiento para obtener un diagnóstico preciso y un tratamiento adecuado."]
+    },
+    {
+      "tag": "source_info",
+      "patterns": ["¿De dónde sacas la información?", "¿Cómo obtienes tus datos?"],
+      "responses": ["Mi información proviene de bases de datos médicas confiables y guías clínicas reconocidas."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Adiós", "Hasta luego", "Chau"],
+      "responses": ["¡Hasta luego! Si tienes más preguntas, no dudes en preguntar."]
+    },
+
+        {
+            "tag": "Existencia",
+             "patterns": ["Quien eres ?","Que eres?"],
+             "responses": ["Soy Alesia , tu chatbot medico de confianza que te ayudara en todo lo posible en tu recuperacion."]
+        },
+        {
+            "tag": "appointment_request",
+            "patterns": ["quiero agendar una cita", "necesito una cita"],
+            "responses": ["Por supuesto. Por favor, proporciona tu número de DNI."],
+            "context_set": "ENTREGA_DNI"
+        },
+        {
+            "tag": "ENTREGA_DNI",
+            "patterns": ["mi DNI es {dni}", "{dni}"],
+            "responses": ["Gracias. Ahora, ¿cuál es tu nombre y número de teléfono?"],
+            "context_filter": "appointment_dni",
+            "context_set": "DETALLES_CITA"
+        },
+        {
+            "tag": "DETALLES_CITA",
+            "patterns": ["mi nombre es {nombre} y mi número es {telefono}", "soy {nombre}, mi número es {telefono}"],
+            "responses": ["Gracias, {nombre}. ¿Para qué día te gustaría agendar la cita?"],
+            "context_filter": "appointment_details",
+            "context_set": "CITA_FECHA"
+        },
+        {
+            "tag": "CONFIRMACION_CITA",
+            "patterns": ["para el {fecha}", "el {fecha}", "quiero la cita el {fecha}"],
+            "responses": ["Perfecto, {nombre}. Tu cita para el {fecha} ha sido agendada."],
+            "context_filter": "CITA_FECHA"
+        },
+        {
+            "tag": "DOLOR_DE_CABEZA",
+            "patterns": ["Tengo dolor de cabeza", "Me duele la cabeza", "Siento presion en la cabeza", "Tengo migraña"],
+            "responses": [
+                "Los dolores de cabeza pueden tener diversas causas, como el estres, la tension, o la falta de sueño. Te recomiendo consultar a un medico si el dolor persiste.",
+                "Para aliviar el dolor de cabeza, puedes probar con descanso, hidratacion y medicamentos como el paracetamol. Consulta a tu medico si el dolor es severo o frecuente."
+            ],
+            "context_set": "DOLOR_DE_CABEZA"
+        },
+
+        {
+            "tag": "cough",
+            "patterns": ["Tengo tos", "Estoy tosiendo", "Me duele la garganta y tengo tos", "Tengo una tos persistente"],
+            "responses": [
+                "La tos puede ser causada por una infeccion respiratoria, alergias o irritacion en la garganta. Consulta a un medico si la tos persiste o viene acompañada de otros sintomas.",
+                "Para aliviar la tos, puedes probar con miel, jengibre, o medicamentos para la tos disponibles en la farmacia. Si la tos persiste, es importante consultar a un medico."
+            ],
+            "context_set": "cough"
+        },
+        {
+      "tag": "source_info",
+      "patterns": ["¿De dónde sacas tu información?", "¿Cómo obtienes tus datos?"],
+      "responses": ["Obtengo mi información de PubMed, una base de datos confiable de artículos médicos revisados por expertos."]
+    },
+    {
+      "tag": "explain_pubmed",
+      "patterns": ["¿Qué es PubMed?", "Explícame sobre PubMed"],
+      "responses": ["PubMed es un servicio de la Biblioteca Nacional de Medicina de EE.UU. que indexa artículos de investigación médica y biomédica. Proporciona acceso a resúmenes y enlaces a artículos completos."]
+    },
+        {
+      "tag": "consult_doctor",
+      "patterns": ["¿Debería consultar a un médico?", "¿Es importante ver a un médico antes de tomar medicamentos?"],
+      "responses": ["Sí, siempre es crucial consultar a un médico antes de comenzar cualquier tratamiento para obtener un diagnóstico preciso y un tratamiento adecuado."]
+    }
+    ]
+}
